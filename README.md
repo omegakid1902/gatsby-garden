@@ -1,40 +1,82 @@
-# Publish Obsidian Notes with MkDocs (template)
+# Starter for the Digital Garden theme
 
-Would you like to make some of your [Obsidian](https://obsidian.md/) notes public?
+Quickly get started using the Gatsby garden theme! This starter creates a new Gatsby site that is preconfigured to work with the [Gatsby garden theme](https://www.npmjs.com/package/gatsby-theme-garden).
 
-This template gives you an easy way to publish your Obsidian notes on your Github pages.
+## 🚀 Quick start
 
-With this template, you get these **out-of-the-box**:
+1.  **Create a Gatsby site.**
 
-- an awesome website based on Material theme, complete with a search bar (Checkout this template published [here](https://jobindj.github.io/obsidian-mkdocs/))
-- get the Obsidian/Roam style `[[wikilinks]]` from your vault in your published notes
-- Toggle between light and dark mode
+    Use the Gatsby CLI to create a new site, specifying the garden theme starter.
 
+    ```shell
+    # create a new Gatsby site using the garden theme starter
+    gatsby new my-digital-garden https://github.com/mathieudutour/gatsby-starter-digital-garden
+    ```
 
-## How to get started?
+2.  **Start developing.**
 
-1. Create a new github repository using [this template](https://github.com/jobindj/obsidian-mkdocs/generate)
-    - In this step, give a name to your repository. By default your notes will be published at `<https://username.github.io/repo-name/>`
-    - You need to copy only the `main` branch while create the repo from the template
-2. Clone the repository you generated into your Obsidian folder/vault.
-3. Move the notes you would like to make public to the `repo-name/docs` folder.
-    - Easiest way to do this would be using drag and drop within Obsidian
-4. Commit and push the changes. Github actions will publish your notes using [MkDocs](https://www.mkdocs.org/), with the [Material theme](https://squidfunk.github.io/mkdocs-material/). 
+    Navigate into your new site’s directory and start it up.
 
-**Not working for you?** Open an [issue](https://github.com/jobindj/obsidian-mkdocs/issues/new/choose) and let me know what went wrong.
+    ```shell
+    cd my-digital-garden/
+    gatsby develop
+    ```
 
-## Configuring your website
+3.  **Open the code and start customizing!**
 
-### How do I arrange notes as sections and pages?
+    Your site is now running at `http://localhost:8000`!
 
-By default, the sections and pages will follow the folder structure within `/docs`. The folders and sub-folders will show up as sections. Try not to have white spaces in your folder and file names, as these will be converted to HTML links. The webpage heading will be the same as the first-level heading in the markdown note.
+    To get started, check out the guide to [using a Gatsby theme](https://gatsbyjs.org/docs/themes/using-a-gatsby-theme), or the longer, [more detailed tutorial](https://gatsbyjs.org/tutorial/using-a-theme).
 
-- If you would like to arrange the pages manually, then use the `nav` option in the `mkdocs.yml` [configuration file](https://www.mkdocs.org/#adding-pages) at the root of this repo  to set custom page navigation.
-    - For example, see the setup for [the Blue Book](https://lyz-code.github.io/blue-book/) at [github](https://github.com/lyz-code/blue-book/blob/master/mkdocs.yml). Managing each page using `nav` can become cumbersome as the number of notes increase though!
-- The Materials theme provides multiple options to arrange [sections](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-sections), use [navigation tabs](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-tabs), and many other helpful [navigation setups](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/)
+## 🧐 What's inside?
 
-## Alternatives
+Here are the top-level files and directories you'll see in a site created using the notes theme starter.
 
-- [kmaasrud/oboe](https://github.com/kmaasrud/oboe): tool to convert an Obsidian vault into a static directory of HTML files.
-- [Jackiexiao/foam-mkdocs-template](https://github.com/Jackiexiao/foam-mkdocs-template): template for Obsidian/Foam using mkdocs/mkdocs-material/mkdocs-roamlinks-plugin
-- [foambubble/foam-template](https://github.com/foambubble/foam-template): Foam workpace template
+```text
+gatsby-starter-digital-garden
+├── content
+│   └── garden
+│       ├── example-dir
+│       │   └── hi.mdx
+│       └── hello.mdx
+├── .gitignore
+├── .prettierrc
+├── gatsby-config.js
+├── LICENSE
+├── package-lock.json
+├── package.json
+└── README.md
+```
+
+1.  **`/content`**: A content folder holding assets that the theme expects to exist. In this case, you're starting with some example notes! Delete the notes contained in `/content/garden` and start writing your own!
+
+2.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+
+3.  **`.prettierrc`**: This file tells [Prettier](https://prettier.io/) which configuration it should use to lint files.
+
+4.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. When using themes, it's where you'll include the theme plugin, and any customization options the theme provides.
+
+5.  **`LICENSE`**: This starter is licensed under the MIT license.
+
+6.  **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+
+7.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+
+8.  **`README.md`**: A text file containing useful reference information about your project.
+
+## 🎓 Learning Gatsby
+
+Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/).
+
+Here are some places to start:
+
+### Themes
+
+- To learn more about Gatsby themes specifically, we recommend checking out the [theme docs](https://www.gatsbyjs.org/docs/themes/).
+
+### General
+
+- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+
+- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Reference Guides_ and _Gatsby API_ sections in the sidebar.
+# my-gatsby

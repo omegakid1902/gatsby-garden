@@ -12,29 +12,29 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          persist-credentials: false
-          # Number of commits to fetch. 0 indicates all history.
-          # Default: 1
-          fetch-depth: 0
 
-      - name: Setup Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.7.7
-          architecture: x64
-    
-      - name: Cache dependencies
-        uses: actions/cache@v1
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-
-      - name: Install dependencies
-        run: pip install pip-tools
+      - name: Install gatsby-cli
+        run: |
+          npm -v
+          npm install -g gatsby-cli
 
       - name: get gat
         run: gatsby new my-digital-garden https://github.com/omegakid1902/my-gatsby.git
+
+      - name: go to my-digital-garden
+        run: |
+          cd my-digital-garden
+          pwd
+          #ls
+          #gatsby build
+          #ls
+
+      - name: pwd
+        run: pwd
+
+      - uses: enriikke/gatsby-gh-pages-action@v2
+        with:
+          access-token: ${{ secrets.gatsby_secret }}
+          deploy-branch: gh-pages-gatsby-digital-garden
+          git-config-name: 'github-actions[bot]'
+          git-config-email: 'github-actions[bot]@users.noreply.github.com'

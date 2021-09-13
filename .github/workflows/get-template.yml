@@ -17,17 +17,15 @@ jobs:
         run: |
           npm -v
           npm install -g gatsby-cli
-
-      - name: get gat
-        run: gatsby new my-digital-garden https://github.com/omegakid1902/my-gatsby.git
-
-      - name: go to my-digital-garden
+      
+      - name: remove, get gat
         run: |
-          cd my-digital-garden
-          pwd
-          #ls
-          #gatsby build
-          #ls
+          cd ..
+          rm -rf omegakid1902.github.io
+          ls
+          gatsby new omegakid1902.github.io https://github.com/omegakid1902/my-gatsby.git
+          cd omegakid1902.github.io
+          git remote set-url origin https://github.com/omegakid1902/omegakid1902.github.io.git
 
       - name: pwd
         run: pwd

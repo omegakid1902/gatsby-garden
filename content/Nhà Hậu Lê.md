@@ -6,7 +6,7 @@ tags:
   - '#seed🥜'
   - '#permanent/concept'
 aliases:
-  - 
+  - Hậu Lê
 publish: True
 ---
 # Nhà Hậu Lê

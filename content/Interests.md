@@ -7,7 +7,7 @@ tags:
   - '#garden🏡'
   - '#permanent/concept'
 aliases:
-  - 
+  - Interests
 publish: True
 ---
 # Interests 

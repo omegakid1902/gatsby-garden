@@ -7,7 +7,7 @@ tags:
   - '#garden🏡'
   - '#permanent/concept'
 aliases:
-  - 
+  - Language
 publish: True
 ---
 # Language

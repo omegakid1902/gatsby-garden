@@ -16,3 +16,15 @@ jobs:
           deploy-branch: gh-pages-gatsby-digital-garden
           git-config-name: 'github-actions[bot]'
           git-config-email: 'github-actions[bot]@users.noreply.github.com'
+
+#      - name: Commit build version
+#        run: |
+          #git config --local user.email "action@github.com"
+          #git config --local user.name "GitHub Action"
+#          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+#          git config --local user.name "github-actions[bot]"
+#          echo "$(date '+%Y-%m-%d %H:%M:%S')-build.${{ github.run_number }}: Changed in gatsby-digital-garden branch" >> build.log
+#          git add build.log
+ #         git diff-index --quiet HEAD \
+#            || git commit -m "gh-pages build number #${{ github.run_number }}"
+#          git push origin gatsby-digital-garden

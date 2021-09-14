@@ -7,7 +7,7 @@ tags:
   - '#seed🥜'
   - '#permanent/concept'
 aliases:
-  - 
+  - Ngô Đình Diệm
 publish: True
 ---
 # Ngô Đình Diệm

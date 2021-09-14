@@ -6,22 +6,24 @@ tags:
   - '#🏡'
   - '#permanent/concept'
 aliases:
-  - 
+  - Enter the garden
 publish: True
 ---
 # Enter the garden
 
-## Tools:
+Chào mừng bạn đã đến với khu vườn ghi chú.
+
+## Công cụ:
 [[📌 Workbench]]
 
 [[⏩ Quick note]]
 
 [[📑 Bookmark]]
 
-## Entertainment
+## Giải trí
 [[🏡 Phim hay]]
 
-## Research
+## Nghiên cứu
 [[❕ Topics to research]]
 
 [[Lịch Sử Việt Nam]]
@@ -30,4 +32,4 @@ publish: True
 
 [[🏡 Health]]
 
-Test tí hehe
+Test 2

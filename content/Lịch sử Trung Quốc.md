@@ -7,7 +7,7 @@ tags:
   - '#garden🏡'
   - '#permanent/concept'
 aliases:
-  - 
+  - 🏡 Lịch sử Trung Quốc
 publish: False
 ---
 # Lịch sử Trung Quốc
@@ -22,7 +22,6 @@ publish: False
 [[Nhà Hạ]]
 [[Nhà Thương]]
 [[Nhà Chu]]
-
 [[Đông Hán]]
 [[Nhà Lương]]
 [[Nhà Tùy]]

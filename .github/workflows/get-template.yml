@@ -12,23 +12,12 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
 
       - name: Install gatsby-cli
         run: |
           npm -v
           npm install -g gatsby-cli
-      
-      #- name: remove, get gat
-      #  run: |
-      #    cd ..
-      #    rm -rf omegakid1902.github.io
-      #    ls
-      #    gatsby new omegakid1902.github.io https://github.com/omegakid1902/my-gatsby.git
-      #    cd omegakid1902.github.io
-      #    git remote set-url origin https://github.com/omegakid1902/omegakid1902.github.io.git
-
-      - name: pwd
-        run: pwd
 
       - uses: enriikke/gatsby-gh-pages-action@v2
         with:

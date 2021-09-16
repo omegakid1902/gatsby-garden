@@ -36,3 +36,11 @@ jobs:
           deploy-branch: gh-pages
           git-config-name: 'github-actions[bot]'
           git-config-email: 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Alert repository_dispatch to omegakid1902.github.io repo
+        uses: mvasigh/dispatch-action@main
+        with:
+          token: ${{ secrets.GATSBY_SECRET }}
+          repo: omegakid1902.github.io
+          owner: omegakid1902
+          event_type: publish_gatsby_garden

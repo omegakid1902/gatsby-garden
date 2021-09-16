@@ -3,8 +3,11 @@ name: Gatsby Publish
 on:
   push:
     branches:
-      - gatsby-digital-garden
-
+      - main
+      
+  repository_dispatch:
+    types: [update_zettelkasten]
+    
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,7 +16,7 @@ jobs:
       - uses: enriikke/gatsby-gh-pages-action@v2
         with:
           access-token: ${{ secrets.gatsby_secret }}
-          deploy-branch: gh-pages-gatsby-digital-garden
+          deploy-branch: gh-pages
           git-config-name: 'github-actions[bot]'
           git-config-email: 'github-actions[bot]@users.noreply.github.com'
 

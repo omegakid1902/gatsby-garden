@@ -5,8 +5,8 @@ on:
     # Sequence of patterns matched against refs/heads
 #    branches:
 #      - main
-#  repository_dispatch:
-#    types: [update_zettelkasten]
+  repository_dispatch:
+    types: [update_zettelkasten]
   workflow_dispatch:
     # Inputs the workflow accepts.
     inputs:

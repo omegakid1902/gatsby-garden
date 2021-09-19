@@ -14,6 +14,34 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.7.7
+          architecture: x64
+
+      - name: Cache dependencies
+        uses: actions/cache@v1
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+      - name: Install dependencies
+        run: pip install pip-tools
+
+      - name: Clone zettelkasten
+        run: |
+          cd ..
+          git clone https://github.com/omegakid1902/zettelkasten.git
+
+      - uses: actions/checkout@v2
+
+      - name: Scan md file to publish
+        run: |
+          python publish.py
+          python publish_clear_front.py
+
 #      - name: Install gatsby-cli
 #        run: |
 #          npm -v

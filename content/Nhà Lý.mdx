@@ -1,6 +1,3 @@
----
-publish: True
----
 # Nhà Lý MOC
 
 %% 

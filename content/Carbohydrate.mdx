@@ -1,6 +1,3 @@
----
-publish: True
----
 # Carbohydrate
 
 %% 

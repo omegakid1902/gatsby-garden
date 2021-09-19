@@ -41,6 +41,7 @@ jobs:
 
       - name: Scan md file to publish
         run: |
+          rm -rf content/
           python publish.py
           python publish_clear_front.py
 
@@ -49,15 +50,16 @@ jobs:
 #          npm -v
 #          npm install -g gatsby-cli
 #
-#      - name: Commit report
-#        run: |
-#          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-#          git config --local user.name "github-actions[bot]"
-#          echo "$(date '+%Y-%m-%d %H:%M:%S')-build.${{ github.run_number }}: update_zettelkasten" >> build.log
-#          git add build.log
-#          git diff-index --quiet HEAD \
-#            || git commit -m "gh-pages build number #${{ github.run_number }}"
-#          git push origin main
+      - name: Commit report
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add ./content/
+          echo "$(date '+%Y-%m-%d %H:%M:%S')-build.${{ github.run_number }}: update_zettelkasten" >> build.log
+          git add build.log
+          git diff-index --quiet HEAD \
+            || git commit -m "gh-pages build number #${{ github.run_number }}"
+          git push origin main
 
       - uses: enriikke/gatsby-gh-pages-action@v2
         with:

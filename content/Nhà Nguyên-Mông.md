@@ -1,5 +1,5 @@
 ---
-title: Nhà Nguyên
+title: Nhà Nguyên - Mông
 ---
 # Nhà Nguyên
 

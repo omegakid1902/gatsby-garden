@@ -22,7 +22,7 @@ title: Lịch sử Trung Quốc
 [[Đông Ngô]]
 [[Nhà Tấn]]
 [[Nhà Tống]]
-[[Nhà Nguyên]]
+[[Nhà Nguyên-Mông]]
 [[Nhà Đại Lý]]
 [[Nhà Thanh]]
 [[Thái Bình Thiên Quốc]]

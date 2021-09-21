@@ -11,7 +11,7 @@ for file in os.listdir("../zettelkasten/"):
         with open(os.path.join("../zettelkasten/", file), encoding="utf8") as f:
             content = f.read()
             metadata, content = frontmatter.parse(content)
-            if 'publish' in metadata.keys():
+            if 'publish' in metadata.keys() and metadata['publish'] == True:
                 print("Copy publish files from zettelkasten to content/")
                 copy(os.path.join("../zettelkasten/", file), './content/')
             else:
@@ -23,7 +23,7 @@ for root, dirs, files in os.walk("../zettelkasten/Zet/"):
             with open(os.path.join(root, file), encoding="utf8") as f:
                 content = f.read()
                 metadata, content = frontmatter.parse(content)
-                if 'publish' in metadata.keys():
+                if 'publish' in metadata.keys() and metadata['publish'] == True:
                     print("Copy publish files from zettelkasten to content/")
                     print(os.path.join(root, file))
                     copy(os.path.join(root, file), './content/')

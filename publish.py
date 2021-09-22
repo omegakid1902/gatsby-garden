@@ -6,8 +6,11 @@ import os
 if not os.path.exists('./content'):
     os.mkdir('./content')
 
-copytree("../zettelkasten/Spaces/Projects/Bible Study Kit/Scripture (BPT)", './content/')
-                
+original = "../zettelkasten/Spaces/Projects/Bible Study Kit/Scripture (BPT)/"
+target = "./content/"
+move(original, target)
+
+shutil.move(original,target)  
 for file in os.listdir("../zettelkasten/"):
     if file.endswith(".md"):
         with open(os.path.join("../zettelkasten/", file), encoding="utf8") as f:

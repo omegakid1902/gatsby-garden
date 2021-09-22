@@ -1,15 +1,12 @@
 import os
 import frontmatter
-from shutil import copy
+from shutil import *
 import os
 
 if not os.path.exists('./content'):
     os.mkdir('./content')
 
-for root, dirs, files in os.walk("../zettelkasten/Spaces/Projects/Bible Study Kit/Scripture (BPT)"):
-    for file in files:
-        if file.endswith(".md"):
-            copy(os.path.join(root, file), './content/')
+copytree("../zettelkasten/Spaces/Projects/Bible Study Kit/Scripture (BPT)", './content/')
                 
 for file in os.listdir("../zettelkasten/"):
     if file.endswith(".md"):

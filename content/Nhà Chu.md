@@ -11,10 +11,4 @@ Tiền thân của [[Nhà Chu]] là [[Nhà Thương]], kế tục là [[Nhà T�
 
 ## Questions:
 
-
 ## Tham khảo:
-```dataview
-list
-from [[Nhà Chu]]
-sort file.name asc
-```

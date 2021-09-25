@@ -1,17 +1,6 @@
 ---
 title: Nhà Trần
 ---
-
----
-title: Nhà Trần
-tags:
-  - '#created/2021/Jul/09'
-  - '#garden🏡'
-  - '#permanent/place'
-aliases:
-  - Nhà Trần
-publish: True
----
 # Nhà Trần
 
 ## Sơ lược
